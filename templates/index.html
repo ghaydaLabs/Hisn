@@ -9,15 +9,14 @@
           rel="stylesheet">
     
     <style>
-        /* Custom Colors (Matching your theme) */
         :root {
             --selective-yellow: #FFB915;
             --mustard: #FFD358;
             --indigo-dye: #003F66;
             --prussian-blue: #002A45;
             --oxford-blue: #011B2F;
-            --light-blue-action: #005691; /* أزرق فاتح مخصص للإجراءات المقترحة */
-            --light-subtitle: #ADD8E6; /* أزرق فاتح للعناوين الفرعية */
+            --light-blue-action: #005691; 
+            --light-subtitle: #ADD8E6; 
         }
 
         body {
@@ -51,7 +50,6 @@
             font-weight: bold;
         }
 
-        /* 🔥🔥 لون العنوان الفرعي الجديد 🔥🔥 */
         .subtitle {
             color: var(--mustard) !important;
             text-align: center;
@@ -59,23 +57,18 @@
             margin-bottom: 30px;
         }
 
-        /* Standard Alert Styles */
         .alert {
             border-radius: 8px; 
             padding: 15px;
             margin-bottom: 15px;
             color: #fff;
         }
+
         .alert-success { background-color: #28a745 !important; border-color: #28a745 !important; }
         .alert-warning { background-color: #ffc107 !important; border-color: #ffc107 !important; color: #212529 !important;}
         .alert-danger { background-color: #dc3545 !important; border-color: #dc3545 !important; }
-        /* 🔥🔥 لون Proposed Actions (أزرق فاتح مخصص) 🔥🔥 */
-        .alert-info { 
-            background-color: var(--light-blue-action) !important; 
-            border-color: var(--light-blue-action) !important; 
-        }
+        .alert-info { background-color: var(--light-blue-action) !important; border-color: var(--light-blue-action) !important;}
 
-        /* --- Custom Entropy Colors (Matching Theme) --- */
         .entropy-excellent { 
             background-color: #28a745 !important; 
             border-color: #28a745 !important;
@@ -92,7 +85,6 @@
             color: #ecf0f1 !important;
         }
         
-        /* 🔥🔥 إصلاح زر Analyze Password 🔥🔥 */
         .btn-custom {
             background-color: var(--selective-yellow) !important; 
             border-color: var(--selective-yellow) !important;
@@ -109,15 +101,14 @@
             padding: 12px 25px;
             border-radius: 8px;
             font-size: 1.1em;
-}
-        /* 🔥🔥 تعديل زر Generate Random 🔥🔥 */
+        }
+
         .btn-info {
             background-color: #003F66 !important; /* لون رمادي/أزرق محايد ليكون مختلفاً عن alert-info */
             border-color: #002A45 !important;
             color: #ecf0f1 !important;
         }
 
-        /* Breach Check Styling (8px Rounded Box) */
         .breach-check-box {
             padding: 15px;
             margin-bottom: 15px;
@@ -125,45 +116,40 @@
             font-weight: bold;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
+
         .breach-check-box.breached { background-color: #dc3545 !important; border-color: #dc3545 !important; }
         .breach-check-box.safe { background-color: #28a745 !important; border-color: #28a745 !important; }
-
         .progress { background-color: rgba(255, 255, 255, 0.1); }
         .progress-bar { color: #212529; font-weight: bold; }
         
-        /* 🔥🔥 تنسيق درجة الإنتروبيا (حجم أكبر بدلاً من ** ) 🔥🔥 */
         .entropy-value {
             font-size: 1.25em;
             font-weight: bold;
             margin-right: 5px;
         }
         
-        /* تنسيق جدول الإنتروبيا والمنهجية */
-        .table-dark tbody tr:hover {
-            background-color: rgba(255, 255, 255, 0.1) !important;
-        }
+        .table-dark tbody tr:hover { background-color: rgba(255, 255, 255, 0.1) !important;}
+
         .scoring-list li {
             list-style: none;
             padding: 5px 0;
             border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
         }
+
         .scoring-list {
             padding-right: 0;
             margin-bottom: 10px;
         }
 
         .form-control {
-              background-color: var(--indigo-dye); /* لون الخلفية الأزرق الداكن */
-    color: #ecf0f1; /* لون النص الفاتح */
-    border: 1px solid #5a7d9b;
-    padding: 12px;
-    border-radius: 8px; /* استدارة الزوايا */
-}
-code {
-    color: #FFD358 !important; /* لون النص داخل الكود لتباين أفضل */
-    background-color: var(--oxford-blue) !important; /* خلفية Oxford Blue */
-    /* ... تنسيقات أخرى ... */
-}
+            background-color: var(--indigo-dye);/
+            color: #ecf0f1;
+            border: 1px solid #5a7d9b;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        code { color: #FFD358 !important; background-color: var(--oxford-blue) !important;}
 
     </style>
 </head>

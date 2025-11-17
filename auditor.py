@@ -10,7 +10,7 @@ MIN_LENGTH = 12
 UPPERCASE_CHARS = string.ascii_uppercase
 LOWERCASE_CHARS = string.ascii_lowercase
 DIGITS = string.digits
-SPECIAL_CHARS = string.punctuation # Includes common symbols like !@#$%^&*
+SPECIAL_CHARS = string.punctuation # Includes common symbols
 
 # ====================================================================
 # 1. Password Strength and Complexity Analysis

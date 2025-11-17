@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    direction: rtl; /* لدعم اللغة العربية */
+    direction: rtl; 
     text-align: right;
 }
 
@@ -45,7 +45,6 @@ h3 {
     padding-right: 10px;
 }
 
-/* تنسيق حقول الإدخال والأزرار */
 label {
     display: block;
     margin-bottom: 8px;
@@ -72,39 +71,37 @@ button[type="submit"] {
     width: 100%;
     transition: background-color 0.3s ease;
 }
-
+    
 button[type="submit"]:hover {
     background-color: #218838;
 }
 
-/* تنسيق منطقة النتائج */
 #results-area {
-    margin-top: 30px;
+    margin-top: 30px; 
     padding-top: 20px;
     border-top: 1px solid #eee;
 }
 
-#results-area p {
+#results-area p {  
     background-color: #f9f9f9;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 8px; 
     line-height: 1.6;
 }
 
-/* تحديد ألوان الحالات (كما في كود HTML) */
-.safe { 
-    color: #28a745; 
+.safe {
+    color: #28a745;
     font-weight: bold; 
 }
-.breached { 
-    color: #dc3545; /* أحمر للخطر */
-    font-weight: bold; 
-    background-color: #fdd; 
+.breached {
+    color: #dc3545; 
+    font-weight: bold;
+    background-color: #fdd;
 }
-.weak { 
-    color: #ffc107; /* أصفر للتحذير */
+.weak {
+    color: #ffc107; 
 }
-.strong { 
-    color: #28a745; 
-    font-weight: bold; 
+.strong {
+    color: #28a745;
+    font-weight: bold;
 }

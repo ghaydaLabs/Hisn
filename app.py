@@ -2,14 +2,13 @@ from flask import Flask, render_template, request, jsonify
 import sys
 import os
 
-# Ensure the current path is included for smooth module imports
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import all necessary functions from auditor.py
 try:
     from auditor import check_strength, check_pwned, calculate_entropy, generate_password, analyze_hash
 except ImportError as e:
-    # Exit if the critical dependency (auditor.py) is missing
+     # Exit if the critical dependency (auditor.py) is missing
     print(f"Error: Could not import functions from auditor.py. Details: {e}", file=sys.stderr)
     sys.exit(1)
 
